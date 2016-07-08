@@ -71,12 +71,13 @@
 <div class="wrapper">
 
                 <h2>Welcome</h2>
-<a href="#createaccount" class="button">Create Account</a>
+                <a href="#createaccount" class="button">Create Account</a>
 <a href="#login" class="button">Log in</a>
 <a href="courses" class="button">Courses</a>
 <a href="#about" class="button">How To Guide</a>
 <a href="#about" class="button">About Us</a>
 </div>
+
 </html>
                    
                 </ul>
@@ -104,18 +105,121 @@
         </div>
     </header>
 
-    <!-- About Section -->
+   <style>
+.dropbtn {
+    background-color: #e6b800;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #00ccff;
+}
+</style> <!-- About Section -->
     <section id="about" class="container content-section text-center">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
+            <div class="wrappercentre">
                 <h2>Welcome To TASSA</h2>
-                <p>A web application that facilitates the matriculant-tertiary institution application process by allowing the students to submit. their details once and have them distributed to the various institutions.</p>
+                <p>TASSA is South Africa's web-based Student Application Centre. <br>An engine built to simplify the Ever-so time consuming South African College and University application process.<br>TASSA allows users to essentially Choose all their desired Courses (offered by the multiple different institutions in SA); <br>fill in ONE application form (for all) and finally; <br> let TASSA do the rest.</p>
                 <p><h2>How To Guide</h2> </p>
-                <p>
-                    <li><a href="courses">Course Info</a></li>
+                <p>   
                 </p>
+                    <body>
+                    <div class="wrappercentre">
+                    &emsp;
+                       <div class="dropdown">
+                        <button class="dropbtn">Apply</button>
+                        <div class="dropdown-content">
+                        <a href="#">Step 1: Create Account</a>
+                        <a href="#">Step 2: Log In</a>
+                        <a href="#">Step 3: Course Research</a>
+                        <a href="#">Step 4: Get Necessary Documents</a>
+                        <a href="#">Step 5: Apply</a>
+                      </div>
+                      </div>
+                      &emsp;
+                      <div class="dropdown">
+                        <button class="dropbtn">Necessary Documents</button>
+                        <div class="dropdown-content">
+                        <a href="#">Copy of ID (Certified) or Passport (Certified)</a>
+                        <a href="#">Copy of Gr11/Gr12 results (Certified)</a>
+                        <a href="#">Proof of Payment from Registered Bank to Acct: 12120987</a>
+                      </div>
+                      </div>
+                      &emsp;
+                      <div class="dropdown">
+                       <button class="dropbtn">Payment Methods</button>
+                        <div class="dropdown-content">
+                        <a href="#">The sum of the negotiated application fees of the Tertiary Institutions selected combined with R15 for each institution applied to through TASSA must be paid (and the proof of payment submitted with your application) in order for your One for Many application to be received, processed and distributed to your desired Colleges and Universities.</a>
+                      </div>
+                      </div>
+                      &emsp;
+                      <div class="dropdown">
+                         <button class="dropbtn">Track Applications</button>
+                        <div class="dropdown-content">
+                        <a href="#">Responses from your Colleges and Universities can be seen in the Track section (after you've logged into your account)</a>
+                        <a href="#">Responses will also be sent directly to your Email Address</a>
+                        <a href="#">You will be allowed to make amendments to your applications and submit extra required documents from the APPLY section</a>
+                        <a href="#">No extra fees will be charged for amendments to - or extra document resubmissions for - applications already paid for and submitted through TASSA.</a>
+
+                      </div>
+                      </div>
+                      &emsp;
+                      <div class="dropdown">
+                        <button class="dropbtn">Courses</button>
+                        <div class="dropdown-content">
+                        <a href="#">Section for all necessary Course Research using TASSA search engines </a>
+                        <a href="#">Sift through all 23 Tertiary Institutions in South Africa and find what you're looking for in each</a>
+                        <a href="#">Application fee of each College and University or the lack thereof will be shown in this section</a>
+                      </div>
+
+                    </div>
+                    </body>
+               
+                
             </div>
+
         </div>
+        <P><br><br><br></P>
+        <div class="wrappercentre">
+                   <a href="#page-top" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-up animated"></i>
+                        </a>
+                        <P></P>
+                        <a href="#createaccount" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a> 
+                </div>
+
     </section>
 
     <!-- Download Section -->
@@ -130,17 +234,26 @@
                     <label for="surnname">Surname:  </label>
                     <input type="text" id="surname" name="s_user_id" maxlength="80" />
                     <P></P>
-                    <label for="email">Email   </label>
+                    <label for="email">Email:   </label>
                     <input type="text" id="email" name="s_user_id" maxlength="80" />
                     <p></p>
-                    <label for="password">Password</label>
+                    <label for="password">Password:</label>
                     <input type="text" id="password" name="s_user_id" maxlength="80" />
                     <P></P>
-                    <label for="confirmpassword">Confirm Password</label>
+                    <label for="confirmpassword">Confirm Password:</label>
                     <input type="text" id="confirmpassword" name="s_user_id" maxlength="80" />
                     <P></P>
-                    <a href="#about" class="button">Sign Up</a>
-                    <a href="apply" class="btn btn-default btn-lg">I'm ready to apply</a>
+                    <a href="login" class="button">Sign Up</a>
+                    
+                    <div class="wrappercentre">
+                   <a href="#page-top" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-up animated"></i>
+                        </a>
+                        <P></P>
+                        <a href="#login" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a> 
+                </div>
                 </div>
             </div>
         </div>
@@ -156,29 +269,24 @@
                 <input type="hidden" id="app-id" name="s_app_id" value="" />
                 <input type="hidden" name="s_camefrom_login" value="X" />
  
-               <label for="username">username</label>
+               <label for="username">Username:</label>
                <input type="text" id="username" name="s_user_id" maxlength="80" />
                <P></P>
-               <label for="password">password</label>
+               <label for="password">Password:</label>
                <input type="password" id="password" name="s_user_pwd" maxlength="12" />
                <P></P>
-               <a href="#about" class="button">Log In</a>
-               <a href="account_lookup.WBX">Forgot your username or password?</a>
+               <a href="login" class="button">Log In</a>
+               <a href="account_lookup.WBX">Forgot your password?</a>
+                <div class="wrappercentre">
+                   <a href="#page-top" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-up animated"></i>
+                        </a>
+                        </div>
                </form>
                 
-                <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
+                <p>
                 </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-                    </li>
-                </ul>
+                
             </div>
         </div>
     </section>
@@ -190,6 +298,18 @@
 
     <!-- Footer -->
     <footer>
+    <h2>Contact and Feedback</h2>
+    <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="#" class="btn btn-default btn-lg"><i class="fa fa-phone fa-fw"></i> <span class="network-name">Telephone: 012 663 2331</span></a>
+                    </li>
+                    <li>
+                        <a href="https://facebook.com" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Tertiary Application Service South African</span></a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">tassafeedback@gmail.com</span></a>
+                    </li>
+                </ul>
         <div class="container text-center">
             <p>Copyright &copy; Your Website 2016</p>
         </div>

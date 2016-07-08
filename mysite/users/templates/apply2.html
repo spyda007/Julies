@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load staticfiles %}
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Tumi">
+
+    <title>TASSA</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'vendor/font-awesome/css/bootstrap.min.css' %}">
+
+    <!-- Custom Fonts -->
+    <link href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="{% static 'css/grayscale.css' %}" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+             <div class="wrapperleft">
+              <div class="dropdown">
+                   <a href= "{% url 'apply' %}"  class="button"> back</a> <!-- Home Button-->
+            </div>
+            </div>  
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <!DOCTYPE html>
+<html>
+<head>
+<style>
+.dropbtn {
+    background-color: #e6b800;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.form-control {
+  display: block;
+  width: 10%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.form-control2 {
+  display: block;
+  width: 20%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.wrapper{
+    text-align:center;
+        }
+.button {
+    background-color: #e6b800;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.wrapper2{
+    text-align:center;
+        }
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.intro2 {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+  text-align: left;
+  color: white;
+  background: url(../img/book1.png) no-repeat bottom center scroll;
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #00ccff;
+}
+</style>
+</head>
+
+<body>
+<div class="wrapper">
+    <h2>APPLY (2/2)</h2>
+
+  <a href="#page_top" class="button">Course Selections</a>    
+  <a href="#personal" class="button">Other Particulars</a> 
+  <a href="#academic" class="button">Submit Documents</a>                                       
+  <a href="#selectuni" class="button">Review and Submit</a>                                             
+
+</div> 
+
+</body>
+              
+                   
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="wrapperleft">
+         <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                    <h2>COURSE SELECTIONS</h2>
+                      <h3>Wits</h3>
+                         <label for="surburb">Choice1:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <label for="surburb">Attendance:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" value= "part time" maxlength="12" />
+                         <label for="surburb">Year of Study:</label>
+                         <input type="number" id="streetaddress" name="s_user_pwd" value= "2017" maxlength="12" />
+                         <label for="surburb">Plan:</label>
+                         <input type="number" id="streetaddress" name="s_user_pwd" value= "2017" maxlength="12" />
+                         <P></P>
+                         <P></P>
+                        <label for="surburb">Choice2:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <label for="surburb">Attendance:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" value= "part time" maxlength="12" />
+                         <label for="surburb">Year of Study:</label>
+                         <input type="number" id="streetaddress" name="s_user_pwd" value= "2017" maxlength="12" />
+                         <label for="surburb">Plan:</label>
+                         <input type="number" id="streetaddress" name="s_user_pwd" value= "2017" maxlength="12" />
+                         <P></P
+                         <P></P>
+                         <label for="surburb">Choice3:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <label for="surburb">Attendance:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" value= "part time" maxlength="12" />
+                         <label for="surburb">Year of Study:</label>
+                         <input type="number" id="streetaddress" name="s_user_pwd" value= "2017" maxlength="12" />
+                         <label for="surburb">Plan:</label>
+                         <input type="number" id="streetaddress" name="s_user_pwd" value= "2017" maxlength="12" />
+                         <P></P
+                         <P></P>
+                         
+                         <h3>UJ</h3>
+                         <label for="surburb">Choice1:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <label for="surburb">Attendance:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" value= "part time" maxlength="12" />
+                         <label for="surburb">Year of Study:</label>
+                         <input type="number" id="streetaddress" name="s_user_pwd" value= "2017" maxlength="12" />
+                         <P></P
+                         <P></P>
+                         <label for="surburb">Choice2:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <label for="surburb">Attendance:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" value= "part time" maxlength="12" />
+                         <label for="surburb">Year of Study:</label>
+                         <input type="number" id="streetaddress" name="s_user_pwd" value= "2017" maxlength="12" />
+                         <P></P
+                         <P></P>
+                         <label for="surburb">Choice3:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <label for="surburb">Attendance:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" value= "part time" maxlength="12" />
+                         <label for="surburb">Year of Study:</label>
+                         <input type="number" id="streetaddress" name="s_user_pwd" value= "2017" maxlength="12" />
+                         <P><br></P>
+                         
+                         
+                         
+                    </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <P></P>
+
+        <div class = "wrappercenter">
+         <a href="#personal" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>   
+        </div>
+        
+    </header>
+
+    <!-- About Section -->
+    <section id="personal" class="container content-section text-center">
+        <div class="row">
+            <div class="wrappercentre">
+                  <h2>Other Particulars</h2>
+                         <label for="surburb">Main Activity During Past Year:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                        <label for="surburb">Sports Name:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                        
+                         <label for="surburb">Level:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">Sports Name 2:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         
+                         <label for="surburb">Level:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">Sports Name 3:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                        
+                         <label for="surburb">Level:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                        <label for="surburb">Do You Have a Disability?</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">Do You Have More Than Two Disabilities?</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">Disability 1:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">Disability 2:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">Disability 3:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">Disability 4:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                        <label for="surburb">Disability 5:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">Other Disabilities:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <div class="wrappercentre">
+             <a href="#page-top" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-up animated"></i>
+                        </a>
+        </div>
+        <P></P>
+        <div class="wrappercentre">
+             <a href="#academic" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+        </div>         
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Download Section -->
+    <section id="academic" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+             <h2>Submit Your Documents</h2>
+                         <label for="surburb">Submission 1:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                        <label for="surburb">Submission 2:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">Submission 3:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">Submission 4:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">Submission 5:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                          <label for="surburb">Submission 6:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                        </div>
+                        <div class="wrappercentre">
+             <a href="#personal" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-up animated"></i>
+                        </a>
+        </div>
+        <P></P>
+        <div class="wrappercentre">
+             <a href="#selectuni" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+        </div>
+        </div>
+       
+    </section>
+
+    <!-- Contact Section -->
+    <section id="selectuni" class="container content-section text-center">
+        <div class="row">
+            <div class="wrappercentre">
+                     <h2>Review and Submit</h2>
+                    <label for="surburb">I, the APPLICANT, accept these <a href="account_lookup.WBX">Terms and Conditions</a>:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <h3>Please take this time to Review all your information and document submissons to see if they are complete and correct before you submit your information to TASSA</h3>
+                        
+        </div>
+        <P></P>
+        <div class="wrappercentre">
+             <a href="#personal" class="button">Submit</a> 
+              <P></P>
+             <a href="#page-top" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-up animated"></i>
+                        </a>
+        </div>    
+                </div>
+           
+        </div>
+    </section>
+
+    <!--University selection -->
+    <section id="selectcourse" class="container content-section text-center">
+       
+      
+    </section>
+    
+    
+
+    <!-- Map Section -->
+    <div id="map">
+         <div class="wrapperleft">
+                 
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+            <div class="container text-center">
+            <p>Copyright &copy; Your Website 2016</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="{% static 'vendor/jquery/jquery.js'} %"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script type="text/javascript" src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Theme JavaScript -->
+    <script type="text/javascript" src="{% static 'js/grayscale.min.js' %}"></script>
+
+</body>
+
+</html>

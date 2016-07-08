@@ -37,15 +37,12 @@
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
-            <div class="wrapperleft">
+              <div class="wrapperleft">
               <div class="dropdown">
                    <a href= "{% url 'index' %}"  class="button"> TASSA</a> <!-- Home Button-->
             </div>
-            </div> 
-
-             <div class="wrappercentre">      
-                    <h2>Course Info</h2>
-                    
+            </div>   
+                
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -56,6 +53,9 @@
 <html>
 <head>
 <style>
+.wrapper{
+    text-align:center; 
+}
 .button {
     background-color: #e6b800;
     border: none;
@@ -68,81 +68,26 @@
     margin: 4px 2px;
     cursor: pointer;
 }
-
-
-</style>
-<style>
-.dropbtn {
-    background-color: #e6b800;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: #00ccff;
-}
 </style>
 </head>
+<body> 
 
-<body>
-<div class="wrappercentre">
-<div class="dropdown">
-  <button class="dropbtn">School Search</button>
-  <div class="dropdown-content">
-    <a href="#">University of Witswatersrand</a>
-    <a href="#">University of Johannesburg</a>
-  </div>
-</div>
-</body>
+<div class="wrapper">
 
-<body>   
-<div class="dropdown">                                            
-  <button class="dropbtn">Course Search</button>
-  <div class="dropdown-content">
-    <a href="#">Commerce</a>
-    <a href="#">Engineering</a>
-  </div>
-</div> 
-</body>
-<body>   
-<div class="dropdown">                                            
-  <button class="dropbtn">Custom Search</button>
-  <div class="dropdown-content">
-    <a href="#">Coming Soon</a>
-  </div>
-</div> 
+                <h2>Welcome User</h2>
+    
+   <a href="index" class="button">How To Guide</a> 
+   <a href="apply" class="button">Apply</a>
+
+   <a href="courses" class="button">Track Applications</a>
+
+   <a href="courses2" class="button">Courses</a>          
+<a href="#createaccount" class="button">My Profile</a>
+
+  
 </div>
-</body>
-              
+
+</html>
                    
                 </ul>
             </div>
@@ -158,8 +103,8 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <h1 class="brand-heading">TASSA</h1>
-                        <p class="intro-text">Explore Your Options
-                            <br></p>
+                        <p class="intro-text">Personal
+                            <br>Home Page</p>
                         <a href="#about" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
@@ -174,76 +119,90 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Welcome To TASSA</h2>
-                <p>A web application that facilitates the matriculant-tertiary institution application process by allowing the students to submit. their details once and have them distributed to the various institutions.</p>
-                <p><h2>Services Offered</h2> </p>
+                <p>TASSA is South Africa's web-based Student Application Centre. <br>The engine was built to simplify the ever-so time consuming South African College and University application process.<br>TASSA allows users to essentially Choose all their desired Courses (offered by the multiple different institutions in SA); <br>fill in ONE application form (for all); <br> and let TASSA do the rest.</p>
+                <p><h2>How To Guide</h2> </p>
                 <p>
-                    <li><a href="download">Course Info</a></li>
+                    <li><a href="courses">Course Info</a></li>
                 </p>
-                <a href="#page-top" class="btn btn-circle page-scroll">
+                <div class="wrapperright">
+                   <a href="#page-top" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-up animated"></i>
                         </a>
                         <P></P>
+                        <a href="#createaccount" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a> 
+                </div>
+                
             </div>
         </div>
     </section>
 
     <!-- Download Section -->
-    <div>
-     <a href="#contact" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>   
-    </div>
-    
-    <section id="download" class="content-section text-center">
+    <section id="createaccount" class="content-section text-center">
         <div class="download-section">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Apply Now</h2>
-                    <p>Have personal details ready!!!.</p>
-                    <p>Identity Number </p>
-                    <p>Address</p>
-                    <p>Academic Records</p>
-                    <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">I'm ready to apply</a>
+                    <h2>Create an Account</h2>
+                    <label for="name">First Name:</label>
+                    <input type="text" id="name" name="s_user_id" maxlength="80" />
+                    <P></P>
+                    <label for="surnname">Surname:  </label>
+                    <input type="text" id="surname" name="s_user_id" maxlength="80" />
+                    <P></P>
+                    <label for="email">Email:   </label>
+                    <input type="text" id="email" name="s_user_id" maxlength="80" />
+                    <p></p>
+                    <label for="password">Password:</label>
+                    <input type="text" id="password" name="s_user_id" maxlength="80" />
+                    <P></P>
+                    <label for="confirmpassword">Confirm Password:</label>
+                    <input type="text" id="confirmpassword" name="s_user_id" maxlength="80" />
+                    <P></P>
+                    <a href="login" class="button">Sign Up</a>
+                    <a href="apply" class="btn btn-default btn-lg">I'm ready to apply</a>
+                    <div class="wrapperright">
+                   <a href="#page-top" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-up animated"></i>
+                        </a>
+                        <P></P>
+                        <a href="#login" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a> 
+                </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    
-    <section id="contact" class="container content-section text-center">
+    <section id="login" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>Logi in Details</h2>
+                <h2>Log In</h2>
                 <form id="login-form" name="mylogin" action="profile_apps.WBX" method="post" autocomplete="off">
                 <input type="hidden" name="w_profile_option" value="profile_apps.WBX" />
                 <input type="hidden" id="app-id" name="s_app_id" value="" />
                 <input type="hidden" name="s_camefrom_login" value="X" />
  
-               <label for="username">username</label>
+               <label for="username">Username:</label>
                <input type="text" id="username" name="s_user_id" maxlength="80" />
-               <label for="password">password</label>
+               <P></P>
+               <label for="password">Password:</label>
                <input type="password" id="password" name="s_user_pwd" maxlength="12" />
-               <button type="submit" id="login-btn">Log in</button>
-               <a href="account_lookup.WBX">Forgot your username or password?</a>
-               <a href="#page-top" class="btn btn-circle page-scroll">
+               <P></P>
+               <a href="login" class="button">Log In</a>
+               <a href="account_lookup.WBX">Forgot your password?</a>
+                <div class="wrapperright">
+                   <a href="#page-top" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-up animated"></i>
                         </a>
+                        </div>
                </form>
                 
-                <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
+                <p>
                 </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-                    </li>
-                </ul>
+                
             </div>
         </div>
     </section>
@@ -255,6 +214,17 @@
 
     <!-- Footer -->
     <footer>
+    <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                    </li>
+                </ul>
         <div class="container text-center">
             <p>Copyright &copy; Your Website 2016</p>
         </div>

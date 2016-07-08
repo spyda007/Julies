@@ -37,7 +37,11 @@
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
-              
+               <div class="wrapperleft">
+              <div class="dropdown">
+                   <a href= "{% url 'login' %}"  class="button"> back</a> <!-- Home Button-->
+            </div>
+            </div>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -120,7 +124,7 @@
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
-.wrapper{
+.wrapper2{
     text-align:center;
         }
 
@@ -159,13 +163,14 @@
 
 <body>
 <div class="wrapper">
-    <h2>APPLY</h2>
+    <h2>APPLY (1/2)</h2>
 
-  <a href="#personal" class="button">Personal Details</a>    
-  <a href="#academic" class="button">Academic Details</a> 
-  <a href="#selectuni" class="button">Select Universities</a>                                       
-  <a href="#selectcourse" class="button">Select Courses</a>                                             
-  <a href="#selectcourse" class="button">View Profile</a>
+  <a href="#page-top" class="button">Personal Information</a>    
+  <a href="#personal" class="button">Address Information</a> 
+  <a href="#academic" class="button">Educational History</a>                                       
+  <a href="#selectuni" class="button">ACADEMIC Details</a>                                             
+  <a href="#selectcourse" class="button">Previous Higher Education Qualification(s)</a>
+  <a href="#map" class="button">Next of Kin</a>
 </div> 
 </body>
               
@@ -179,187 +184,373 @@
 
     <!-- Intro Header -->
     <header class="intro">
-        <div class="intro-body">
+        <div class="wrapperleft">
+         <div class="intro-body">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                      <h2>Personal Details</h2>
-                <label for="province">Province</label>
-                <input type="text" id="province" name="s_user_id" maxlength="80" />
-                <P></P>
-                <label for="city">City</label>
-                <input type="text" id="city" name="s_user_pwd" maxlength="12" />
-                <P></P>
-                <label for="surburb">Suburb</label>
-                <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
-                <P></P>
-                <label for="streetaddress">Street address</label>
-                <input type="text" id="suburb" name="s_user_pwd" maxlength="12" />
-               <P></P>
-                <label for="surburb">Suburb</label>
-                <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
-                        <a href="#personal" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
+                      <h2>Personal Information</h2>
+                         <label for="surburb">Identity Number:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                        <label for="surburb">Title:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">Surname:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">First Name(s):</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">Maiden Name:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">Date of Birth:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="province">Gender:</label>     
+                        <input type="radio" name="gender" value="male" checked> Male
+                        <input type="radio" name="gender" value="female"> Female
+                        <P></P>
+                        <label for="surburb">Home Language:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">Population Group:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">Country of Origin:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                          <label for="surburb">Religious Affiliation:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                          <label for="surburb">Current Activity:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                          <label for="surburb">Previous Activity:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         
+                         
                     </div>
+
+                   
+                    </div>
+
                 </div>
+
             </div>
+
         </div>
+         <P>
+                             <div class = "wrappercenter">
+         <a href="#personal" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>   
+        </div>
+                         </P>
+        
     </header>
 
     <!-- About Section -->
     <section id="personal" class="container content-section text-center">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-             <label for="province">Gender</label>     
-                <input type="radio" name="gender" value="male" checked> Male
-                <input type="radio" name="gender" value="female"> Female
-                <P></P>
-                <label for="surburb">Population Group</label>
-                <div class="dropdown">                                            
-                <input type="text" id="suburb" name="s_user_pwd" maxlength="12" />
-                <div class="dropdown-content">
-                <a href="#">African</a>
-                <a href="#">Coloured</a>
-                <a href="#">Indian</a>
-                <a href="#">White</a>
-                <a href="#">Asian</a>
-                </div>
-                </div>
-                <P></P>
-                <label for="surburb">Identity Number</label>
-                <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
-                <P></P>
-                <label for="surburb">Date of Birth</label>
-                <input type="date" id="streetaddress" name="s_user_pwd" maxlength="12" />
-                <P></P>
-                <label for="streetaddress">Religion Affiliation</label>
-                <input type="text" id="suburb" name="s_user_pwd" maxlength="12" />
-                <P></P>
-                <label for="streetaddress">Prefered Language</label>
-                <input type="text" id="suburb" name="s_user_pwd" maxlength="12" />
-                <P></P>
-                <label for="streetaddress">Next of Kin</label>
-                
-                <select class="form-control">
-                <option> Parent</option>
-                <option> Sibling</option>
-                <option> Guardian</option>
-                <select>
-                <p></p>
-                <button type="submit" id="login-btn">submit</button> 
-                <P></P>
-                
-                 <a href="#academic" class="btn btn-circle page-scroll">
+            <div class="wrappercentre">
+                  <h2>Address Information</h2>
+                         <h3>Postal Address</h3>
+                         <label for="surburb">Country:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                        <label for="surburb">Province:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">City/Town:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">Suburb:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">Postal Code:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <h3>Street Address</h3>
+                         <label for="surburb">Same as Postal Address?:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">Country:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                        <label for="surburb">Province:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">City/Town:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">Suburb:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">Postal Code:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <h3>Contact Details</h3>
+                         <label for="surburb">Mobile Number:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">Home Number:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                        <label for="surburb">Business Number:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">Fax Number:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">Email Address:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P><br></P> 
+
+                         <div class="wrappercentre">
+             <a href="#page-top" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-up animated"></i>
+                        </a>
+        </div>
+        <P></P> 
+
+        <div class="wrappercentre">
+             <a href="#academic" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
-                </div>
-                  
+        </div>         
             </div>
         </div>
+
     </section>
 
     <!-- Download Section -->
     <section id="academic" class="content-section text-center">
         <div class="download-section">
             <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                     <h2>ACADEMIC Details (grade11)</h2>
-        
-                <P></P>
-                <label for="city">Home Language</label>
-                <input type="text" id="city" name="s_user_pwd" maxlength="12" />
-                <label for="city">%</label>
-                <input type="number" id="city" name="s_user_pwd" maxlength="2" />
-                <P></P>
-                <label for="city">First Additional Language</label>
-                <input type="text" id="city" name="s_user_pwd" maxlength="12" />
-                <label for="city">%</label>
-                <input type="number" id="city" name="s_user_pwd" maxlength="2" />
-                <P></P>
-                <label for="surburb">Mathamatics</label>
-                <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
-                <label for="city">%</label>
-                <input type="number" id="city" name="s_user_pwd" maxlength="2" />
-                <P></P>
-                <label for="streetaddress">Life Orientation</label>
-                <input type="text" id="suburb" name="s_user_pwd" maxlength="12" />
-                <label for="city">%</label>
-                <input type="number" id="city" name="s_user_pwd" maxlength="2" />
-                <P></P>
-                <label for="streetaddress">Subject 1</label>
-                <input type="text" id="suburb" name="s_user_pwd" maxlength="12" />
-                <label for="city">%</label>
-                <input type="number" id="city" name="s_user_pwd" maxlength="2" />
-                <P></P>
-                <label for="streetaddress">Subject 2</label>
-                <input type="text" id="suburb" name="s_user_pwd" maxlength="12" />
-                <label for="city">%</label>
-                <input type="number" id="city" name="s_user_pwd" maxlength="2" />
-                <P></P>
-                <label for="streetaddress">Subject 3</label>
-                <input type="text" id="suburb" name="s_user_pwd" maxlength="12" />
-                <label for="city">%</label>
-                <input type="number" id="city" name="s_user_pwd" maxlength="2" />
-                <P></P>
-                <label for="streetaddress">Subject 4</label>
-                <input type="text" id="suburb" name="s_user_pwd" maxlength="12" />
-                <label for="city">%</label>
-                <input type="number" id="city" name="s_user_pwd" maxlength="2" />
-                <P></P>
-                <button type="submit" id="login-btn">submit</button>
-                <P></P>
-                <a href="#selectuni" class="btn btn-circle page-scroll">
+             <h2>Educational History</h2>
+                         <label for="surburb">Name of School Attended:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                        <label for="surburb">City/Town:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">Province:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">Postal Code:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">School Postal Addres:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                          <label for="surburb">Last Grade Passed:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                          <label for="surburb">Grade 11 Year:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                          <label for="surburb">Grade 12 Year:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                          <label for="surburb">Grade 12 Examining Authority:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                          <label for="surburb">Grade 12 Exam Date:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                          <label for="surburb">Examination Number:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P> 
+                          <label for="surburb">Grade 12 Results Unavailable (Upgrading Marks):</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>   
+                        </div>
+                        <div class="wrappercentre">
+             <a href="#personal" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-up animated"></i>
+                        </a>
+        </div>
+        <P></P>
+        <div class="wrappercentre">
+             <a href="#selectuni" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
-                 
-                    
-                </div>
-            </div>
         </div>
+        </div>
+       
     </section>
 
     <!-- Contact Section -->
     <section id="selectuni" class="container content-section text-center">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-               
-                <label for="streetaddress">University 1</label>
-                 <select class="form-control2">
-                <option> University of the Witswatersrand</option>
-                <option> University of Johannesburg</option>
-                <select>
+            <div class="wrappercentre">
+                     <h2>ACADEMIC Details (grade11)</h2>
+        
                 <P></P>
-                <label for="streetaddress">University 2</label>
-                 <select class="form-control2">
-                <option> University of the Witswatersrand</option>
-                <option> University of Johannesburg</option>
-                <select>
+                <label for="city">Subject 1:</label>
+                <input type="text" id="city" name="s_user_pwd" maxlength="12" />
+                <label for="city">%</label>
+                <input type="number" id="city" name="s_user_pwd" maxlength="2" />
                 <P></P>
-                <a href="#selectcourse" class="btn btn-circle page-scroll">
+                <label for="city">Subject 2:</label>
+                <input type="text" id="city" name="s_user_pwd" maxlength="12" />
+                <label for="city">%</label>
+                <input type="number" id="city" name="s_user_pwd" maxlength="2" />
+                <P></P>
+                <label for="surburb">Subject 3:</label>
+                <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                <label for="city">%</label>
+                <input type="number" id="city" name="s_user_pwd" maxlength="2" />
+                <P></P>
+                <label for="streetaddress">Subject 4:</label>
+                <input type="text" id="suburb" name="s_user_pwd" maxlength="12" />
+                <label for="city">%</label>
+                <input type="number" id="city" name="s_user_pwd" maxlength="2" />
+                <P></P>
+                <label for="streetaddress">Subject 5:</label>
+                <input type="text" id="suburb" name="s_user_pwd" maxlength="12" />
+                <label for="city">%</label>
+                <input type="number" id="city" name="s_user_pwd" maxlength="2" />
+                <P></P>
+                <label for="streetaddress">Subject 6:</label>
+                <input type="text" id="suburb" name="s_user_pwd" maxlength="12" />
+                <label for="city">%</label>
+                <input type="number" id="city" name="s_user_pwd" maxlength="2" />
+                <P></P>
+                <label for="streetaddress">Subject 7:</label>
+                <input type="text" id="suburb" name="s_user_pwd" maxlength="12" />
+                <label for="city">%</label>
+                <input type="number" id="city" name="s_user_pwd" maxlength="2" />
+                <P></P>
+                <label for="streetaddress">Subject 8:</label>
+                <input type="text" id="suburb" name="s_user_pwd" maxlength="12" />
+                <label for="city">%</label>
+                <input type="number" id="city" name="s_user_pwd" maxlength="2" />
+                <P></P>
+                <label for="streetaddress">Subject 9:</label>
+                <input type="text" id="suburb" name="s_user_pwd" maxlength="12" />
+                <label for="city">%</label>
+                <input type="number" id="city" name="s_user_pwd" maxlength="2" />
+                <P></P>
+               <label for="streetaddress">Subject 10:</label>
+                <input type="text" id="suburb" name="s_user_pwd" maxlength="12" />
+                <label for="city">%</label>
+                <input type="number" id="city" name="s_user_pwd" maxlength="2" />
+                <P><br> <br> </P>
+
+
+                 
+                    
+                </div>
+                <div class="wrappercentre">
+                     <h2>ACADEMIC Details (grade12)</h2>
+        
+                <P></P>
+                <label for="city">Subject 1</label>
+                <input type="text" id="city" name="s_user_pwd" maxlength="12" />
+                <P></P>
+                <label for="city">Subject 2</label>
+                <input type="text" id="city" name="s_user_pwd" maxlength="12" />
+                <P></P>
+                <label for="surburb">Subject 3</label>
+                <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                <P></P>
+                <label for="streetaddress">Subject 4</label>
+                <input type="text" id="suburb" name="s_user_pwd" maxlength="12" />
+                <P></P>
+                <label for="streetaddress">Subject 5</label>
+                <input type="text" id="suburb" name="s_user_pwd" maxlength="12" />
+                <P></P>
+                <label for="streetaddress">Subject 6</label>
+                <input type="text" id="suburb" name="s_user_pwd" maxlength="12" />
+                <P></P>
+                <label for="streetaddress">Subject 7</label>
+                <input type="text" id="suburb" name="s_user_pwd" maxlength="12" />
+                <P></P>
+                <label for="streetaddress">Subject 8</label>
+                <input type="text" id="suburb" name="s_user_pwd" maxlength="12" />
+               <P></P>
+                 <label for="streetaddress">Subject 9</label>
+                <input type="text" id="suburb" name="s_user_pwd" maxlength="12" />
+                <P></P>
+                 <label for="streetaddress">Subject 10</label>
+                <input type="text" id="suburb" name="s_user_pwd" maxlength="12" />
+                <P></P> 
+                <div class="wrappercentre">
+             <a href="#academic" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-up animated"></i>
+                        </a>
+        </div>
+        <P></P>
+        <div class="wrappercentre">
+             <a href="#selectcourse" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
-               </form>
-                
-              
-            </div>
+        </div>    
+                </div>
+           
         </div>
     </section>
 
     <!--University selection -->
     <section id="selectcourse" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                
-                <h2>Select Courses</h2>
-                    <p>Accounting</p>
-                    <p>Auditing </p>
-                    <p>Economics</p>
-                    <p>Taxation</p>
-                    <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">I'm ready to apply</a>
-               </form>
-                
-              
+        <div class="wrapperleft">
+                  <h2>Previous Higher Education Qualification(s)</h2>
+                         <label for="surburb">Degree:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                        <label for="surburb">Year of Registration:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">Year of Study:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">Attendence Type:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">Student Number:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">Start Date:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">End Date:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                        <label for="surburb">Institution:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">Country:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">Status:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">Other Previous Qualification:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">Qualification Level:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">National Level:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                        
+                         <P><br></P> 
+
+                         <div class="wrappercentre">
+             <a href="#selectuni" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-up animated"></i>
+                        </a>
+        </div>
+        <P></P>
+        <div class="wrappercentre">
+             <a href="#map" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+        </div>         
             </div>
         </div>
     </section>
@@ -367,14 +558,69 @@
     
 
     <!-- Map Section -->
-    <div id="map"></div>
+    <div id="map">
+         <div class="wrapperleft">
+                  <h2>Next of Kin</h2>
+                         <label for="surburb">Surname:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                        <label for="surburb">Title:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">Initials:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">Relationship:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">Mobile Number:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">Home Number:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">Business Number:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                        <label for="surburb">Email Address:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <h3>Postal Address</h3>
+                         <label for="surburb">Same As Applicant's Postal?</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">Country:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">Province:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">City:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                         <P></P>
+                         <label for="surburb">Postal Code:</label>
+                         <input type="text" id="streetaddress" name="s_user_pwd" maxlength="12" />
+                    
+                        
+                    
+
+                         <div class="wrappercentre">
+             <a href="#page-top" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-up animated"></i>
+                        </a>
+        </div>
+        <P></P>
+        <div class="wrapperright">
+        <a href="applycont" class="button">Finish Application</a> 
+            <p>Copyright &copy; Your Website 2016</p>
+        </div>       
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer>
-        <div class="container text-center">
         
-            <p>Copyright &copy; Your Website 2016</p>
-        </div>
     </footer>
 
     <!-- jQuery -->
